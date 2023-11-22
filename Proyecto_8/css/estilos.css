@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(83, 200, 220);
+}
+
+.countdownTitle {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 2%;
+    color: #ff3636;
+    height: 20px;
+    text-align: center;
+}
+
+.countdownContainer {
+    height: 70px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    margin: 10px 8px;
+    box-shadow: inset 0px 0px 9px 1px #ffffff9e;
+    border: 4px solid #ffffff92;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.countdown-item {
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    color: white;
+}
+
+.letters {
+    display: flex;
+    justify-content: space-around;
+}
+
+.letter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    color: white;
+    height: 20px;
+    width: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.buttons button {
+    padding: 20px 16px;
+    outline: none;
+    border: none;
+    margin: 10px 2px;
+    color: rgb(135, 0, 0);
+    background:  #FEE1C7;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 1.7rem;
+    cursor: pointer;
+}
+
+.buttons button.on {
+    pointer-events: none;
+    opacity: .7;
+}
+
+.buttons button.button {
+    color: #FEE1C7 ;
+    background: #db4848;
+}
+.buttons button.button :hover {
+    background: #de6565;
+}
+.santa {
+    width: 600px;
+    height: 550px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url("../img/papaNoel.png");
+    background-repeat: no-repeat;
+}
+
+.santa.on {
+    background-image: url("../img/papaNoel.gif");
+}
